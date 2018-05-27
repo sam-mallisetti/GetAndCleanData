@@ -1,0 +1,109 @@
+---
+title: "Get And Clean Data Course Project"
+author: "Sam Mallisetti"
+date: "May 27, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Codebook for Tidy Data generated from run_analysis.R code
+
+Tidy Data (tidydata.txt) contains summarized data from a study conducted on 30 participants for 6 activities using a Samsung wearable device. There were 10,299 observations summarized into 180 by averaging on each of the 79 selected measurements for each subject and activity combination. In the original data there were 561 measurements, but as per the project instructions we selected only those which contained "mean" or "std" in their names. Below is a description of all the variables and activities. 
+
+Subjects are numbered 1 to 30.
+Activities are Laying, Sitting, Standing, Walking, Walking downstairs, and Walking upstairs.
+
+79 Variables are provided below:
+1.  "tBodyAcc-mean()-X"          Mean of Body Acceleration Angle X component in Radians
+2.  "tBodyAcc-mean()-Y"          Mean of Body Acceleration Angle Y component in Radians
+3.  "tBodyAcc-mean()-Z"          Mean of Body Acceleration Angle Z component in Radians
+4.  "tBodyAcc-std()-X"           STD of Body Acceleration Angle X component in Radians
+5.  "tBodyAcc-std()-Y"           STD of Body Acceleration Angle Y component in Radians
+6.  "tBodyAcc-std()-Z"           STD of Body Acceleration Angle Z component in Radians
+7.  "tGravityAcc-mean()-X"       Mean of Gravity Acceleration Angle X component in Radians
+8.  "tGravityAcc-mean()-Y"       Mean of Gravity Acceleration Angle Y component in Radians
+9.  "tGravityAcc-mean()-Z"       Mean of Gravity Acceleration Angle Z component in Radians
+10. "tGravityAcc-std()-X"        STD of Gravity Acceleration Angle X component in Radians
+11. "tGravityAcc-std()-Y"        STD of Gravity Acceleration Angle Y component in Radians
+12. "tGravityAcc-std()-Z"        STD of Gravity Acceleration Angle Z component in Radians
+13. "tBodyAccJerk-mean()-X"      Mean of Body Jerk Angle X component in Radians
+14. "tBodyAccJerk-mean()-Y"      Mean of Body Jerk Angle Y component in Radians
+15. "tBodyAccJerk-mean()-Z"      Mean of Body Jerk Angle Z component in Radians
+16. "tBodyAccJerk-std()-X"       STD of Body Jerk Angle X component in Radians
+17. "tBodyAccJerk-std()-Y"       STD of Body Jerk Angle Y component in Radians
+18. "tBodyAccJerk-std()-Z"       STD of Body Jerk Angle Z component in Radians
+19. "tBodyGyro-mean()-X"         Mean Body Angular Velocity X component in Radians per Second
+20. "tBodyGyro-mean()-Y"         Mean Body Angular Velocity Y component in Radians per Second
+21. "tBodyGyro-mean()-Z"         Mean Body Angular Velocity Z component in Gravity Units
+22. "tBodyGyro-std()-X"          STD Body Angular Velocity X component in Radians per Second
+23. "tBodyGyro-std()-Y"          STD Body Angular Velocity Y component in Radians per Second
+24. "tBodyGyro-std()-Z"          STD Body Angular Velocity Z component in Radians per Second
+25. "tBodyGyroJerk-mean()-X"     Mean Body Jerk Angular Velocity X component in Radians per Second
+26. "tBodyGyroJerk-mean()-Y"     Mean Body Jerk Angular Velocity Y component in Radians per Second
+27. "tBodyGyroJerk-mean()-Z"     Mean Body Jerk Angular Velocity Z component in Radians per Second
+28. "tBodyGyroJerk-std()-X"      STD Body Jerk Angular Velocity X component in Radians per Second
+29. "tBodyGyroJerk-std()-Y"      STD Body Jerk Angular Velocity Y component in Radians per Second
+30. "tBodyGyroJerk-std()-Z"      STD Body Jerk Angular Velocity Y component in Radians per Second
+31. "tBodyAccMag-mean()"         Mean Body Acceleration in Gravity Units
+32. "tBodyAccMag-std()"          STD Body Acceleration in Gravity Units
+33. "tGravityAccMag-mean()"      Mean Gravity Acceleration in Gravity Units
+34. "tGravityAccMag-std()"       STD Gravity Acceleration in Gravity Units
+35. "tBodyAccJerkMag-mean()"     Mean Body Jerk Acceleration in Gravity Units
+36. "tBodyAccJerkMag-std()"      STD Body Jerk Acceleration in Gravity Units
+37. "tBodyGyroMag-mean()"        Mean Body Angular Velocity in Radians per Second
+38. "tBodyGyroMag-std()"         STD Body Angular Velocity in Radians per Second
+39. "tBodyGyroJerkMag-mean()"    Mean Body Jerk Angular Velocity in Radians per Second
+40. "tBodyGyroJerkMag-std()"     STD Body Jerk Angular Velocity in Radians per Second
+41. "fBodyAcc-mean()-X"          Mean Body Acceleration Fourier Transform X component in Hertz
+42. "fBodyAcc-mean()-Y"          Mean Body Acceleration Fourier Transform Y component in Hertz
+43. "fBodyAcc-mean()-Z"          Mean Body Acceleration Fourier Transform Z component in Hertz
+44. "fBodyAcc-std()-X"           STD Body Acceleration Fourier Transform X component in Hertz
+45. "fBodyAcc-std()-Y"           STD Body Acceleration Fourier Transform Y component in Hertz
+46. "fBodyAcc-std()-Z"           STD Body Acceleration Fourier Transform Z component in Hertz
+47. "fBodyAcc-meanFreq()-X"      Mean Body Frequency Fourier Transform X component in Hertz
+48. "fBodyAcc-meanFreq()-Y"      Mean Body Frequency Fourier Transform Y component in Hertz
+49. "fBodyAcc-meanFreq()-Z"      Mean Body Frequency Fourier Transform Z component in Hertz
+50. "fBodyAccJerk-mean()-X"      Mean Body Jerk Frequency Fourier Transform X component in Hertz
+51. "fBodyAccJerk-mean()-Y"      Mean Body Jerk Frequency Fourier Transform Y component in Hertz
+52. "fBodyAccJerk-mean()-Z"      Mean Body Jerk Frequency Fourier Transform Z component in Hertz
+53. "fBodyAccJerk-std()-X"       STD Body Jerk Frequency Fourier Transform X component in Hertz
+54. "fBodyAccJerk-std()-Y"       STD Body Jerk Frequency Fourier Transform Y component in Hertz
+55. "fBodyAccJerk-std()-Z"       STD Body Jerk Frequency Fourier Transform Z component in Hertz
+56. "fBodyAccJerk-meanFreq()-X"  Mean Body Jerk Acceleration Frequency Fourier Transform X component in Hertz
+57. "fBodyAccJerk-meanFreq()-Y"  Mean Body Jerk Acceleration Frequency Fourier Transform Y component in Hertz
+58. "fBodyAccJerk-meanFreq()-Z"  Mean Body Jerk Acceleration Frequency Fourier Transform Z component in Hertz
+59. "fBodyGyro-mean()-X"         Mean Body Angular Velocity Fourier Transform X component in Radians per Second
+60. "fBodyGyro-mean()-Y"         Mean Body Angular Velocity Fourier Transform Y component in Radians per Second
+61. "fBodyGyro-mean()-Z"         Mean Body Angular Velocity Fourier Transform Z component in Radians per Second
+62. "fBodyGyro-std()-X"          STD Body Angular Velocity Fourier Transform X component in Radians per Second
+63. "fBodyGyro-std()-Y"          STD Body Angular Velocity Fourier Transform Y component in Radians per Second
+64. "fBodyGyro-std()-Z"          STD Body Angular Velocity Fourier Transform Z component in Radians per Second
+65. "fBodyGyro-meanFreq()-X"     Mean Body Angular Velocity Frequency Fourier Transform Y component in Hertz
+66. "fBodyGyro-meanFreq()-Y"     Mean Body Angular Velocity Frequency Fourier Transform Y component in Hertz
+67. "fBodyGyro-meanFreq()-Z"     Mean Body Angular Velocity Frequency Fourier Transform Z component in Hertz
+68. "fBodyAccMag-mean()"         Mean Body Accleration Fourier Transform in Hertz
+69. "fBodyAccMag-std()"          STD Body Accleration Fourier Transform in Hertz
+70. "fBodyAccMag-meanFreq()"     Mean Body Accleration Frequency Fourier Transform in Hertz
+71. "fBodyBodyAccJerkMag-mean()" Mean Body Jerk Accleration Fourier Transform in Hertz
+72. "fBodyBodyAccJerkMag-std()"  STD Body Jerk Accleration Fourier Transform in Hertz
+73. "fBodyBodyAccJerkMag-meanFreq()"  Mean Body Jerk Accleration Frequency Fourier Transform in Hertz
+74. "fBodyBodyGyroMag-mean()"   Mean Body Angular Velocity Fourier Transform in Gravity Units
+75. "fBodyBodyGyroMag-std()"    Mean Body Angular Velocity Fourier Transform in Gravity Units
+76. "fBodyBodyGyroMag-meanFreq()"  Mean Body Angular Velocity Frequency Fourier Transform in Hertz
+77. "fBodyBodyGyroJerkMag-mean()"  Mean Body Jerk Angular Velocity Fourier Transform in Radians per Second
+78. "fBodyBodyGyroJerkMag-std()"   STD Body Jerk Angular Velocity Frequency Fourier Transform in Hertz
+79. "fBodyBodyGyroJerkMag-meanFreq()"  Mean Body Jerk Angular Velocity Frequency Fourier Transform in Hertz
+---------------------------------------------------------
